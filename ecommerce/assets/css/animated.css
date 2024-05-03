@@ -1,0 +1,59 @@
+ /* Animated CSS  */
+
+
+    #animated_text_color {
+        position: relative;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: inline;
+
+    }
+
+    .animated_heading::after {
+        content: attr(data-text);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: teal;
+        overflow: hidden;
+        border-right: 2px solid teal;
+        animation: animate 4s linear infinite;
+        /* -webkit-text-stroke: .05rem rgb(16, 0, 0); */
+        text-shadow: black 3px 1.5px;
+        white-space: nowrap;
+
+    }
+
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+
+        70% {
+            width: 100%;
+
+        }
+    }
+#blink {
+       
+        font-weight: bolder;      
+        transition: 0.4s;     
+         color: teal;
+        overflow: hidden;
+         /* -webkit-text-stroke: .05rem rgb(16, 0, 0); */
+        text-shadow: black 3px 1.8px;
+        font-size: 3rem;
+        text-transform: uppercase;
+    
+        display: inline;
+        letter-spacing: 4px;
+       
+      }
+
+      .logo_position{
+         margin: 0 auto;
+      }
